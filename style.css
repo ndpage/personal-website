@@ -6,7 +6,7 @@
   
   body {   
     margin: 0;
-    background-color: lightgray;
+    background-color: whitesmoke;
     
   }
   
@@ -14,38 +14,49 @@
     text-align: center;
     font-size: 32px;
   }
+  .profile-pic{
+      margin: 10px 15px;
+      float: left;
+      width: 350px;
+  }
+
   article{
       overflow: hidden;
+      float: left;
+      width: 800px;
+      margin: 20px;
+      padding: 10px;
     }
+    
   
   p {
-      border: 2px solid black;
-      border-radius: 10px;
-      
-    
-      margin: 20px 50px 10px 50px;
-      text-align: center;
-      background-color: white;
-      padding: 3px 0;
-      font-size: 24px;
-      
-  
+    width: 85%;
+    margin-left: 5px;
+    padding: 10px;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 14px;
     }
+
+    .body-content{
+      font-size: 18px;  
+    }
+
     .text{
       font-size: 12px;
       width: 85%;
     }
-    
-    
+
     .header-main{
-      width: 80%;
-      height: 70px;
+      width: 90%;
+      height: 75px;
   
-      margin: 0px auto 2px auto;
+      margin: 5px auto 10px auto;
       border-bottom: solid;
       border-width: 100%;
       border-color: darkblue;
-      padding: 5px;
+      padding: 10px;
     }
   
     button{
