@@ -1,0 +1,100 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  body {   
+    margin: 0;
+    background-color: lightgray;
+    
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 32px;
+  }
+  article{
+      overflow: hidden;
+    }
+  
+  p {
+      border: 2px solid black;
+      border-radius: 10px;
+      
+    
+      margin: 20px 50px 10px 50px;
+      text-align: center;
+      background-color: white;
+      padding: 3px 0;
+      font-size: 24px;
+      
+  
+    }
+    .text{
+      font-size: 12px;
+      width: 85%;
+    }
+    
+    
+    .header-main{
+      width: 80%;
+      height: 70px;
+  
+      margin: 0px auto 2px auto;
+      border-bottom: solid;
+      border-width: 100%;
+      border-color: darkblue;
+      padding: 5px;
+    }
+  
+    button{
+      margin: 5px;
+      width: 150px;
+      height: 50px;
+      align-self: center;
+      border-radius: 10px;
+    }
+  
+    .btn{
+      background-color: whitesmoke;
+      font-size: medium;
+    }
+  
+    .btn:hover{
+      background-color: gainsboro;
+    }
+  
+    .btn:active{
+      background-color: gray;
+      width: 153px;
+    }
+  
+    .button-group{
+      margin: 5px auto 10px auto;
+      text-align: center;
+      
+    }
+  
+    .footer-main {
+      position: fixed;
+      bottom: 0;
+      margin: 0px;
+      width: 100%;
+      height: 50px;  
+      background-color: darkblue;
+      
+    }
+    .footer-text{
+      margin: 5px auto;
+      padding: 10px auto;
+  
+      color: white;  
+      font-style: italic;
+      font-size: 13px;
+  
+    }
+    .footer-text:hover{
+      font-size: 14px;
+    }
+      
