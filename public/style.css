@@ -7,7 +7,8 @@
   body {   
     margin: 0;
     background-color: whitesmoke;
-    
+    background-image:  url("../Assets/matt-palmer-h0l0E9r6xD0-unsplash.jpg");
+    background-size: cover;    
   }
   
   h1 {
@@ -37,6 +38,7 @@
     border-radius: 10px;
     text-align: left;
     font-size: 14px;
+    background-color: whitesmoke;
     }
 
     .body-content{
@@ -50,15 +52,16 @@
 
     .header-main{
       width: 100%;
-      height: 85px;
-      background-color: darkblue;
-      margin-bottom: 15px;
-      padding: 25px;
+      height: 100px;
+      background-color: darkgray;
+      margin-bottom: 10px;
+      padding: 10px 5px;
     }
     .header-title{
-        font-size: 24px;
-        text-align: left;
-        color: whitesmoke;
+      font-size: 24px;
+      text-align: left;
+      color: whitesmoke;
+      padding: 15px;
     }
   
     button{
@@ -69,16 +72,19 @@
       border-radius: 10px;
     }
   
-    .btn{
+    .btn-home{
+      position: absolute;
+      right: 0;
+      top: 20px;
       background-color: whitesmoke;
       font-size: medium;
     }
   
-    .btn:hover{
+    .btn-home:hover{
       background-color: gainsboro;
     }
   
-    .btn:active{
+    .btn-home:active{
       background-color: gray;
       width: 153px;
     }
@@ -89,25 +95,27 @@
       
     }
   
+    .marquee{
+      background-color: #cccccc;
+      font-size: 32px;
+    }
+
     .footer-main {
       position: fixed;
       bottom: 0;
       margin: 0px;
       width: 100%;
       height: 50px;  
-      background-color: darkblue;
+      background-color: darkgray;
       
     }
     .footer-text{
-      margin: 5px auto;
-      padding: 10px auto;
+      margin: 5px auto 5px 10px;
+      padding: 10px auto 5px 5px;
   
       color: white;  
       font-style: italic;
-      font-size: 13px;
+      font-size: 12px;
   
-    }
-    .footer-text:hover{
-      font-size: 14px;
     }
       
