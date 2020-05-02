@@ -8,12 +8,11 @@ var app = express();
 app.use(express.static(__dirname + '/public')); // Server everything in the public directory
 app.use(bodyParser.json());
 
-
-
+/*
 app.get('/home', function(req, res){
     res.send('Hello World');
   });
-  
+  */
 
 // Start the server
 var server = app.listen(8080, function() {
