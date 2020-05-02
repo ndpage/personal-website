@@ -8,9 +8,11 @@ var app = express();
 app.use(express.static(__dirname + '/public')); // Server everything in the public directory
 app.use(bodyParser.json());
 
+
+app.post('')
 /*
 app.get('/home', function(req, res){
-    res.send('Hello World');
+    res.send('public/index.html');
   });
   */
 
