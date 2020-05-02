@@ -6,6 +6,7 @@
   
   body {   
     margin: 0;
+    height: 900px;
     background-color: whitesmoke;
     background-image:  url("../Assets/matt-palmer-h0l0E9r6xD0-unsplash.jpg");
     background-size: cover;    
@@ -29,7 +30,6 @@
       padding: 10px;
     }
     
-  
   p {
     width: 85%;
     margin-left: 5px;
@@ -39,8 +39,11 @@
     text-align: left;
     font-size: 14px;
     background-color: whitesmoke;
+    opacity: 75%;
     }
-
+    .body-header{
+      color: #363636;
+    }
     .body-content{
       font-size: 18px;  
     }
@@ -58,7 +61,7 @@
       padding: 10px 5px;
     }
     .header-title{
-      font-size: 24px;
+      font-size: 32px;
       text-align: left;
       color: whitesmoke;
       padding: 15px;
@@ -98,6 +101,8 @@
     .marquee{
       background-color: #cccccc;
       font-size: 32px;
+      position: relative;
+      bottom: -395px;
     }
 
     .footer-main {
@@ -110,12 +115,11 @@
       
     }
     .footer-text{
-      margin: 5px auto 5px 10px;
-      padding: 10px auto 5px 5px;
-  
+      margin: 5px;
+      padding: 10px auto 10px auto;
       color: white;  
-      font-style: italic;
-      font-size: 12px;
+      font-style: normal;
+      font-size: 10px;
   
     }
       
