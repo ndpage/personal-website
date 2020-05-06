@@ -11,8 +11,4 @@ app.use(bodyParser.json())
   
 
 // Start the server
-var server = app.listen(8080, function() {
-    console.log('Listening on port 8080');
-});
-
-// 192.168.32.1
+app.listen(3000, '127.0.0.1');
