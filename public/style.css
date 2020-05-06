@@ -8,7 +8,7 @@
     margin: 0;
     height: 900px;
     background-color: whitesmoke;
-    background-image:  url("../Assets/matt-palmer-h0l0E9r6xD0-unsplash.jpg");
+    background-image:  url('thomas-heintz-0tgMnMIYQ9Y-unsplash.jpg');
     background-size: cover;    
   }
   
@@ -16,6 +16,7 @@
     text-align: center;
     font-size: 32px;
   }
+
   .profile-pic{
       margin: 10px 15px;
       float: left;
@@ -43,9 +44,16 @@
     }
     .body-header{
       color: #363636;
+      font-size: 40px;
+      border-bottom: solid #363636;
+
     }
     .body-content{
       font-size: 18px;  
+    }
+
+    .body-content-title{
+      font: bold;
     }
 
     .text{
@@ -110,7 +118,7 @@
       bottom: 0;
       margin: 0px;
       width: 100%;
-      height: 50px;  
+      height: 40px;  
       background-color: #363636;
       text-align: center;
       
@@ -121,6 +129,5 @@
       color: white;  
       font-style: normal;
       font-size: 10px;
-  
     }
       
