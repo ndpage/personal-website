@@ -6,10 +6,9 @@ var app = express();
 
 // Configuation for the server app
 app.use(express.static(__dirname + '/public')); // Server everything in the public directory
-app.use(bodyParser.json());
+app.use(bodyParser.json())
 
 
-app.post('')
 /*
 app.get('/home', function(req, res){
     res.send('public/index.html');
