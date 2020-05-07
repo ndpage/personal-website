@@ -69,7 +69,8 @@ p {
     border-radius: 10px;
   }
   .body-main{
-    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 60%;
     margin-right: 2%;
     float: left;
