@@ -1,27 +1,14 @@
 
 
-
-    let currentdate = new Date();
-    $.ajax({
-      type:"GET",
-      url:
-      success: function(data) {
-          $('.text').prepend('<p>' + data.symbol + " $" + data.price +" as of " + currentdate + '</p>');
-        },
-      dataType: 'json',
-    });
-
-    $('.submit-btn').click(function() {
+    $('.btn-home').click(function() {
+      
       $.ajax({
-        type: "POST",
-        url: "login",
-        contentType: "application/json",
-        data: JSON.stringify({
-          username: $("#username").val(),
-          password: $("#password").val()
-        }),
+        type: "GET",
+        url: "hello-world",
+        contentType: "text/plain",
         success: function(data) {
-          console.log('data', data);
+          $('.footer-text').text('Hello, World!')
+          console.log('Success!');
         }
-      })
+      })    
     });
