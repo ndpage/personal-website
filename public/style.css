@@ -2,21 +2,22 @@
  
 
 * {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   font-family: 'Source Sans Pro', sans-serif;
   --color-darkgray: #363636;
   --color-royalblue: #159;
   --color-slategreen: #9df5c8;
   --font-header: source code pro;
+  --background-image: url(https://d3m7xw68ay40x8.cloudfront.net/assets/2015/11/02221549/blue-ridge.jpg);
+  --footer-height: 100px;
 }
 
-body {   
-  margin: 0;
-  width: 100%;
-  overflow: scroll;
-  background-image:  url('thomas-heintz-0tgMnMIYQ9Y-unsplash.jpg');
+html, body {   
+
+  background-image:  var(--background-image, whitesmoke);
   background-size: cover;
-     
 }
 
 h1 {
@@ -32,7 +33,10 @@ article{
 p {
   font-size: 18px;
   }
-
+.rounded-borders{
+  border: solid whitesmoke 2px;
+  border-radius: 10px;
+}
   .header-main{
     display: flex;
     flex-direction: row;
@@ -67,27 +71,40 @@ p {
     margin: 5px 20px;
     
   }
-  .profile-img-box{
-    margin-left: 10px;
-    margin-top: 10px;
-
-    width: 25%;
-    margin-right: 2%;
-    float: left;
-  }
-  .profile-img{
-    width: 100%;
-    border: solid whitesmoke 2px;
-    border-radius: 10px;
-  }
+  
   .body-main{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 60%;
-    margin-right: 2%;
-    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: var(--footer-height, 100px);
+    height: 100%;
+    width: 100%;
+    overflow: auto;
   }
+
+ .body-header-text{
+  margin: 10px;
+  padding: 5px;
+  background: linear-gradient(to left, var(--color-royalblue, blue), white);
+  color: var(--color-darkgray);
+  font-size: 32px;
+ }
  
+.body-main-content{
+  margin: 10px;
+}
+.body-section-1{
+  margin: 5px;
+  width: 800px;
+}
+.profile-img-box{
+  padding: 10px;
+}
+.profile-img{
+  width: 100%;
+  border: solid whitesmoke 2px;
+  border-radius: 10px;
+}
   .body-content-title{
     margin: 10px auto 5px auto;
     padding: 2px;
@@ -144,12 +161,14 @@ p {
     
   }
 
- 
 
   .footer-main {
+    position: relative;
+    height: var(--footer-height, 100px);
+    margin-top: -(var(--footer-height, -100px));
+    clear: both; 
     display: flex;
     flex-direction: column;
-    margin: 0px;
     width: 100%;
     background-color: whitesmoke;
     text-align: center;
@@ -158,7 +177,7 @@ p {
   .footer-text{
     color:black;  
     font-style: normal;
-    font-size: 12px;
+    font-size: 11px;
   }
   .footer-link-unsplash{
     
