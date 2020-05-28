@@ -1,7 +1,11 @@
 
+ 
+
 * {
   box-sizing: border-box;
   font-family: 'Source Sans Pro', sans-serif;
+  --color-darkgray: #363636;
+  --color-royalblue: #159;
 }
 
 body {   
@@ -34,7 +38,7 @@ p {
     height: 100px;
     margin-bottom: 0px;
     padding: 10px;
-    background: linear-gradient(to right, #363636, #c4c4c4);
+    background: linear-gradient(to right, var(--color-royalblue), #c4c4c4);
   }
   .header-title{
     text-align: center;
@@ -138,12 +142,12 @@ p {
     flex-direction: column;
     margin: 0px;
     width: 100%;
-    background-color: #363636;
+    background-color: whitesmoke;
     text-align: center;
     
   }
   .footer-text{
-    color: white;  
+    color:black;  
     font-style: normal;
     font-size: 12px;
   }
