@@ -14,9 +14,8 @@
   --footer-height: 100px;
 }
 
-html, body {   
-
-  background-image:  var(--background-image, whitesmoke);
+html, body {
+  background-image:  var(--background-imag, green);
   background-size: cover;
 }
 
@@ -24,18 +23,32 @@ h1 {
   text-align: center;
   font-size: 32px;
 }
+h2 {
+  font-size: 24px;
+}
+h3{
+  font-size: 22px;
+}
 
 article{
-    width: 60%;
-    float: left;
+  margin: 5px 20px 10px 10px;
+    padding: 15px;
   }
   
 p {
-  font-size: 18px;
+  font-size: 20px;
   }
+
 .rounded-borders{
   border: solid whitesmoke 2px;
   border-radius: 10px;
+}
+.circle{
+  border: solid;
+  border-radius: 50%;
+}
+.small-text{
+  font-size: small;
 }
   .header-main{
     display: flex;
@@ -97,13 +110,21 @@ p {
   margin: 5px;
   width: 800px;
 }
+
+.body-section-2{
+  margin: 10px;
+  width: 600px;
+}
+
 .profile-img-box{
   padding: 10px;
+  
 }
+
 .profile-img{
   width: 100%;
   border: solid whitesmoke 2px;
-  border-radius: 10px;
+  border-radius: 50%;
 }
   .body-content-title{
     margin: 10px auto 5px auto;
@@ -111,17 +132,11 @@ p {
     font: bold;
     width: 98%;
   }
-  .body-content{
-    width: 90%;
-    margin-left: 5px;
-    padding: 5px 5px;
-
-    border: 2px solid darkgray;
-    border-radius: 10px;
+  .body-content-text{
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
     text-align: left;
-    font-size: 14px;
-    background-color: whitesmoke;
-    opacity: 90%;
   }
   .text{
     font-size: 12px;
