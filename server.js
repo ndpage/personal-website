@@ -9,10 +9,11 @@ var hostname = '127.0.0.1';
 // Configuation for the server app
 
 app.use(express.static(__dirname + '/public')); // Serve everything in the public directory
-app.use(bodyParser.json())
+app.use(bodyParser.json());
   
-app.get('/hello-world', (req, res) => res.send('Hello World!'))
-
+app.get('/hello-world', (req, res) => res.send('Hello World!'));
+app.get('/about', (reg,res)=>res.sendFile(__dirname + '/public/about.html'));
+app.get('/', (reg,res)=>res.sendFile(__dirname + '/public/index.html'));
 
 // Start the server
 app.listen(port, hostname); //127.0.0.1
