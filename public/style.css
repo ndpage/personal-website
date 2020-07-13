@@ -10,12 +10,10 @@
   --color-royalblue: #159;
   --color-slategreen: #9df5c8;
   --font-header: source code pro;
-  --background-image: url(https://d3m7xw68ay40x8.cloudfront.net/assets/2015/11/02221549/blue-ridge.jpg);
   --footer-height: 100px;
 }
 
 html, body {
-  background-image:  var(--background-imag, green);
   background-size: cover;
 }
 
@@ -96,10 +94,8 @@ p {
   }
 
  .body-header-text{
-  margin: 10px;
-  padding: 5px;
-  background: linear-gradient(to left, var(--color-royalblue, blue), white);
-  color: var(--color-darkgray);
+  margin: 10px 5px;
+  padding: 10px 5px;
   font-size: 32px;
  }
  
@@ -207,6 +203,17 @@ p {
     border-radius:3px;
   }
 
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    html {
+      font-size: 22px;
+    }
+  }
 
   @media only screen and (max-width: 360px) {
     body{
