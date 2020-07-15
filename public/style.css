@@ -13,9 +13,6 @@
   --footer-height: 100px;
 }
 
-html, body {
-  background-size: cover;
-}
 
 h1 {
   text-align: center;
@@ -52,9 +49,9 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 100px;
+    height: 120px;
     margin-bottom: 0px;
-    padding: 10px;
+    padding: 20px 10px;
     background: linear-gradient(to right, var(--color-royalblue, blue), white);
   }
   .header-text-box{
@@ -198,11 +195,9 @@ padding: 10px 5px;
     }
  
  }
-
- @media only screen and (max-width: 675px) {
-
-  .header-text { 
-    font-size: 36px; 
-    justify-content: middle;
+@media (min-width: 600px){
+  .body-main{
+    flex-direction: row;
   }
+  
 }
