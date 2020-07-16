@@ -31,7 +31,7 @@ article{
   }
   
 p {
-  font-size: calc(16px + 2vmin);
+  font-size: 18px;
   }
 
 .rounded-borders{
@@ -198,6 +198,9 @@ padding: 10px 5px;
 @media (min-width: 600px){
   .body-main{
     flex-direction: row;
+  }
+  .body-section-1{
+    width: 85%;
   }
   
 }
