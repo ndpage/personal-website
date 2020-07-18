@@ -1,14 +1,13 @@
 
 
-    $('.btn-home').click(function() {
-      
+    $('.header-btn-projects').click(function() {
+      alert("Button clicked");
       $.ajax({
         type: "GET",
-        url: "hello-world",
-        contentType: "text/plain",
+        url: "projects",
+        contentType: "text/html",
         success: function(data) {
-          $('.footer-text').text('Hello, World!')
-          console.log('Success!');
+          console.log("Success!");
         }
       })    
     });

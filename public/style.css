@@ -72,6 +72,10 @@ p {
     font-size: 48px;
     font-family: var(--font-header, sans-serif); 
   }
+  .header-btn-projects{
+    width: 75px;
+    height: 50px;
+  }
   .body-icon-link-flexbox{
     display: flex;
     flex-direction: row;
