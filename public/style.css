@@ -131,21 +131,18 @@ padding: 10px 5px;
     text-align: left;
   }
 
-  .btn-home{
-    position: absolute;
-    right: 0;
-    top: 20px;
-    background-color: whitesmoke;
-    font-size: medium;
+  .header-btn{
+    margin: 5px 20px;
+    padding: 0px 5px;
+    width: 100px;
   }
 
-  .btn-home:hover{
+  .header-btn:hover{
     background-color: gainsboro;
   }
 
-  .btn-home:active{
+  .header-btn:active{
     background-color: gray;
-    width: 153px;
   }
 
   .button-group{
@@ -174,7 +171,7 @@ padding: 10px 5px;
     margin: 2px 0px;
   }
 
-  @media only screen and (max-width: 360px) {
+  @media only screen and (max-width: 320px) {
     body{
       font-size: 14px;
     }
@@ -188,7 +185,7 @@ padding: 10px 5px;
       margin-top: 5px;
       padding: 2px;
   
-      width: 50%;
+      width: 75%;
       margin-right: 2%;
       float: left;
     }
