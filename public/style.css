@@ -10,14 +10,9 @@
   --color-royalblue: #159;
   --color-slategreen: #9df5c8;
   --font-header: source code pro;
-  --background-image: url(https://d3m7xw68ay40x8.cloudfront.net/assets/2015/11/02221549/blue-ridge.jpg);
   --footer-height: 100px;
 }
 
-html, body {
-  background-image:  var(--background-imag, green);
-  background-size: cover;
-}
 
 h1 {
   text-align: center;
@@ -31,12 +26,12 @@ h3{
 }
 
 article{
-  margin: 5px 20px 10px 10px;
-    padding: 15px;
+  margin: 10px 15px;
+  padding: 10px;
   }
   
 p {
-  font-size: 20px;
+  font-size: 18px;
   }
 
 .rounded-borders{
@@ -54,9 +49,9 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 100px;
+    height: 120px;
     margin-bottom: 0px;
-    padding: 10px;
+    padding: 20px 10px;
     background: linear-gradient(to right, var(--color-royalblue, blue), white);
   }
   .header-text-box{
@@ -69,7 +64,7 @@ p {
     padding: 0px;
     text-align: left;
     color: whitesmoke;
-    font-size: 48px;
+    font-size: 36px;
     font-family: var(--font-header, sans-serif); 
   }
   .header-btn-projects{
@@ -79,9 +74,9 @@ p {
   .body-icon-link-flexbox{
     display: flex;
     flex-direction: row;
-    margin: 10px 15px;
-    
+    margin: 10px 15px; 
   }
+
   .icon-link-img{
     color: black;
     width: 35px;
@@ -89,37 +84,30 @@ p {
     
   }
   
-  .body-main{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: var(--footer-height, 100px);
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-  }
+.body-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: var(--footer-height, 100px);
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
 
- .body-header-text{
-  margin: 10px;
-  padding: 5px;
-  background: linear-gradient(to left, var(--color-royalblue, blue), white);
-  color: var(--color-darkgray);
-  font-size: 32px;
- }
+.body-header-text{
+margin: 10px 5px;
+padding: 10px 5px;
+}
  
-.body-main-content{
-  margin: 10px;
-}
 .body-section-1{
-  margin: 5px;
-  width: 800px;
-}
-
-.body-section-2{
+  display: flex;
+  flex-direction: column;
   margin: 10px;
-  width: 600px;
 }
-
+  
+.body-main-content{
+    margin: 10px;
+}
 .profile-img-box{
   padding: 10px;
   
@@ -142,20 +130,6 @@ p {
     padding: 10px;
     text-align: left;
   }
-  .text{
-    font-size: 12px;
-    width: 85%;
-  }
-
-  
-
-  button{
-    margin: 5px;
-    width: 150px;
-    height: 50px;
-    align-self: center;
-    border-radius: 10px;
-  }
 
   .btn-home{
     position: absolute;
@@ -177,7 +151,6 @@ p {
   .button-group{
     margin: 5px auto 10px auto;
     text-align: center;
-    
   }
 
 
@@ -185,6 +158,7 @@ p {
     position: relative;
     height: var(--footer-height, 100px);
     margin-top: -(var(--footer-height, -100px));
+    padding-top: 20px;
     clear: both; 
     display: flex;
     flex-direction: column;
@@ -197,24 +171,12 @@ p {
     color:black;  
     font-style: normal;
     font-size: 11px;
+    margin: 2px 0px;
   }
-  .footer-link-unsplash{
-    
-    background-color:black;
-    color:white;
-    text-decoration:none;
-    padding:4px 6px;
-    font-size:12px;
-    font-weight:bold;
-    line-height:1.2;
-    display:inline-block;
-    border-radius:3px;
-  }
-
 
   @media only screen and (max-width: 360px) {
     body{
-      font-size: 12px;
+      font-size: 14px;
     }
 
     .header-text { 
@@ -226,7 +188,7 @@ p {
       margin-top: 5px;
       padding: 2px;
   
-      width: 40%;
+      width: 50%;
       margin-right: 2%;
       float: left;
     }
@@ -239,11 +201,12 @@ p {
     }
  
  }
-
- @media only screen and (max-width: 675px) {
-
-  .header-text { 
-    font-size: 32px; 
-    justify-content: middle;
+@media (min-width: 600px){
+  .body-main{
+    flex-direction: row;
   }
+  .body-section-1{
+    width: 85%;
+  }
+  
 }
