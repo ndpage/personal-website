@@ -16,7 +16,6 @@ app.get('/', (reg,res)=>res.sendFile(__dirname + '/public/index.html'));
 // app.get('/hello-world', (req, res) => res.send('Hello World!'));
 app.get('/projects', (reg,res)=>res.sendFile(__dirname + '/public/projects.html'));
 
-
 // Start the server
 app.listen(port, hostname); //127.0.0.1
 console.log("Listening at http://" + hostname + ":" + port);
