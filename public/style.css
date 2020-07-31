@@ -58,7 +58,7 @@ p {
     width: 100%;
     text-align: left;
     color: whitesmoke;
-    font-size: 36px;
+    font-size: 32px;
     font-family: var(--font-header, sans-serif); 
   }
   .header-btn-flexbox{
