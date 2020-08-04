@@ -17,12 +17,14 @@ app.get('/home', (reg,res)=>res.sendFile(__dirname + '/public/index.html'));
 
 app.get('/projects', (req,res) => res.sendFile(__dirname + '/public/projects.html')); 
 
+app.get('/contact', (req,res) => res.sendFile(__dirname + '/public/contact.html')); 
+
 app.get('/admin',
     function(request, response){
         response.json(
                     {   
-                        username:"jon",
-                        password: "doe"
+                        username:"Nonya",
+                        password: "Bizness"
                     });
     }
 );
