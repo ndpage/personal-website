@@ -1,17 +1,10 @@
 
-
-    $('.profile-img').click(function() { //Event listener for home button 
-      alert("clicked image");
-    });
-
-    $('.projects-btn').click(function() { //Event listener for home button 
-      //var contentMain = document.getElementById("#content-main")
-      
-      $.ajax(
-      { url: "http://127.0.0.1:3000/projects",
-        type: "GET",
-      success: function(result){
-          $("#content-main").html(result);
-        }
-      });
-    });
+ document.getElementById("home-btn").onclick = function () {
+  location.href = "/home";
+};
+ document.getElementById("projects-btn").onclick = function () {
+  location.href = "/projects";
+};
+ document.getElementById("contact-btn").onclick = function () {
+  location.href = "/contact";
+};
