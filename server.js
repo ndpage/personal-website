@@ -11,12 +11,21 @@ var hostname = '127.0.0.1';
 app.use(express.static(__dirname + '/public')); // Serve everything in the public directory
 app.use(bodyParser.json());
 
-app.get('/', (reg,res)=>res.sendFile(__dirname + '/public/index.html'));  
+app.get('/home', (reg,res)=>res.sendFile(__dirname + '/public/index.html'));  
 
+app.get('/admin',
+    function(request, response){
+        response.json(
+                    {   
+                        username:"jon",
+                        password: "doe"
+                    });
+    }
+);
 //app.get('/hello-world', function(req, res) => res.send('Hello World!'));
 
 app.get('/projects', function(req,res){
-        res.sendFile(__dirname + '/projects.html');  
+         res.sendFile(__dirname + '/projects.html');  
     }
 );
 
