@@ -12,7 +12,10 @@
   --footer-height: 100px;
 }
 
-
+article{
+  margin: 10px 15px;
+  padding: 10px;
+  }
 h1 {
   text-align: center;
   font-size: 32px;
@@ -24,13 +27,9 @@ h3{
   font-size: 22px;
 }
 
-article{
-  margin: 10px 15px;
-  padding: 10px;
-  }
   
 p {
-  font-size: 18px;
+    font-size: 18px;
   }
 
 .rounded-borders{
@@ -153,6 +152,42 @@ padding: 10px 5px;
     font-size: 11px;
     margin: 2px 0px;
   }
+.projects{
+  background: linear-gradient(to bottom,white, whitesmoke,lightblue, aqua );
+}
+.project-page-title{
+  margin: 20px auto;
+}
+.project-group-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.project-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid black 2px;
+  border-radius: 10px;
+  align-items: center;  
+  max-width: 800px;
+  margin: 5px auto;
+}
+.project-title{
+  margin: 5px auto;
+  padding: 10px;
+}
+.project-img{
+  margin: 5px;
+  padding: 10px;
+  max-width: 100px;
+}
+
+.project-text{
+  margin: 5px auto;
+  padding: 20px;
+}
 
   @media only screen and (max-width: 360px) {
     body{
