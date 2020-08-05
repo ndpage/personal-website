@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nathan is a dad and engineer who loves technology. You are awesome!">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source Code Pro" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <title>Nathan Page: Contact</title> 
+</head>
+<body>
+  <header class="header-main"> 
+    <div class="header-text-box"> 
+        <h1 class="header-text">Nathan Page</h1>
+    </div>
+    <!-- Header Buttons --> 
+    <div class="header-btn-flexbox"> 
+        <!-- <button class="header-button">Home</button>                
+        <button class="header-button">Projects</button> -->
+    </div>
+    <!-- Social icons -->
+    <div class="header-icon-flexbox">   
+      <a  href="http://www.github.com/ndpage" title="Click to check out Nathan's Github">
+          <img class="icon-link-img" src="github-logo.svg"  alt="Nathan's Github" />
+          <title>Nathan's Github</title>
+      </a>
+      <a  href="http://www.linkedin.com/in/nathan-page-2018" title="Click to check out Nathan's LinkedIn">
+          <img class="icon-link-img" src="linkedin-logo.svg"  alt="Nathan's LinkedIn" />
+          <title>Nathan's LinkedIn</title>
+      </a>
+      <a  href="https://stackoverflow.com/story/nathan-page-2018" title="Click to check out Nathan's Stack Overflow">
+          <img class="icon-link-img" src="stack-overflow-logo.svg"  alt="Nathan's Stack Overflow" />
+          <title>Nathan's Stack Overflow</title>
+      </a>
+  </div> 
+</header> 
+<nav class="nav-bar">
+  <button class="header-button" id="home-btn">Home</button>
+  <button class="header-button" id="projects-btn">Projects</button>
+  <button class="header-button" id="contact-btn">Contact</button>
+</nav>
+<div class="contact-container">
+  <h2 class="page-title">Contact</h2>
+    <div class="contact-body">
+     <article class="body-content-text">
+       <p>
+         If you would like to collaborate, feel free to send me an email using the form below.
+         <br>
+         <br> 
+         I look forward to hearing from you!  
+      </p>
+     </article>
+    <form action="contact.js" class="contact-form">
+      <div class="contact-name">
+          <label for="Name">Name</label><br>
+          <input type="text" id="name" placeholder="Enter your full name">
+      </div>
+      <div class="contact-email">
+          <label for="email">Email</label><br>
+          <input type="text" id="email" placeholder="Enter email">
+      </div>
+      <div class="contact-phone">
+          <label for="phone">Phone</label><br>
+          <input type="text" id="phone" placeholder="Enter phone number">
+      </div>
+      <div class="contact-message">
+          <label for="message">Message</label><br>
+          <textarea type="text" id="message" cols="40" rows="10" placeholder="What would you like to say?"></textarea>
+      </div>
+      <div>
+          <label for="submit">Submit</label><br>
+          <button class="standard-button" id="submit">Submit</button>
+      </div>
+    </form>
+    </div>
+  </div>
+<!-- Footer -->
+<footer class="footer-main">
+  <p class="footer-text">
+      Copyright (c) 2020 Nathan Page.   
+  </p>
+  
+  <p class="footer-text">
+      GitHub icon made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+  </p>
+
+  <p class="footer-text"> 
+      LinkedIn icon made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+  </p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script> 
+</body>
+</html>
