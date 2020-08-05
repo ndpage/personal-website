@@ -138,13 +138,16 @@ p {
 }
 
 .footer-main {
-flex-shrink: 0;
-background-color: gray;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  background: linear-gradient(to bottom,white,lightgray, darkgray);
+  align-items: center;
 }
 .footer-text{
-  color:black;  
-  font-style: normal;
+  font-family: monospace;
   font-size: 12px;
+  margin: 5px auto;
 }
 .projects-container{
   flex: 1 0 auto;
