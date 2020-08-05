@@ -9,7 +9,9 @@
   --color-royalblue: #159;
   --color-slategreen: #9df5c8;
   --font-header: source code pro;
-  --footer-height: 100px;
+}
+body, html{
+
 }
 
 article{
@@ -96,6 +98,7 @@ p {
 
 .body-main{
   display: flex;
+  flex: 1 0 auto;
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: var(--footer-height, 100px);
@@ -141,25 +144,16 @@ padding: 10px 5px;
   }
 
   .footer-main {
-    position: relative;
-    height: var(--footer-height, 100px);
-    margin-top: -(var(--footer-height, -100px));
-    padding-top: 20px;
-    clear: both; 
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: whitesmoke;
-    text-align: center;
-    
+  flex-shrink: 0;
+  background-color: gray;
   }
   .footer-text{
     color:black;  
     font-style: normal;
-    font-size: 11px;
-    margin: 2px 0px;
+    font-size: 12px;
   }
 .projects{
+  flex: 1 0 auto;
   background: linear-gradient(to bottom,white, whitesmoke,lightblue,var(--color-slategreen, lightgreen) );
 }
 .page-title{
@@ -191,11 +185,12 @@ padding: 10px 5px;
   justify-content: space-evenly;
   align-items: center;
 }
-.contact-body{
+.contact-content{
   max-width: 800px;
   margin: 25px 10px;
-
+  
   display: flex;
+  flex: 1 0 auto;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
