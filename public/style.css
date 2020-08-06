@@ -88,8 +88,12 @@ p{
 }
 .icon-link-img{
   color: black;
+  background: whitesmoke;
   width: 30px;
   margin: 5px 20px;
+  padding: 5px;
+  border: solid whitesmoke 1px;
+  border-radius: 10%;
 }
 .nav-bar{
   display: flex;
