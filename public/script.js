@@ -8,3 +8,7 @@
  document.getElementById("contact-btn").onclick = function () {
   location.href = "/contact";
 };
+ //document.getElementById("submit").onclick = function () {
+ // alert("Submit button pressed.")
+// };
+

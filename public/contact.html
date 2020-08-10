@@ -47,10 +47,10 @@
          I look forward to hearing from you!  
       </p>
      </article>
-    <form action="contact.js" class="contact-form">
+    <form action="/contact-form" method="POST" class="contact-form">
       <div class="contact-name">
           <label for="name">Name</label><br>
-          <input type="text" id="name" placeholder="Enter your full name" class="contact-name-box">
+          <input type="text" id="name" name="name" placeholder="Enter your full name" class="contact-name-box">
       </div>
       <div class="contact-email">
           <label for="email">Email</label><br>
@@ -64,9 +64,9 @@
           <label for="message">Message</label><br>
           <textarea type="text" id="message" cols="28" rows="10" placeholder="What would you like to say?"></textarea>
       </div>
-      <div>
-          <label for="submit">Submit</label><br>
-          <button class="standard-button" id="submit">Submit</button>
+      <div class="form-button-group">
+          <button class="standard-button" type="submit" id="submit">Submit</button>
+          <button class="standard-button" type="reset" id="reset">Reset</button>
       </div>
     </form>
     </div>
