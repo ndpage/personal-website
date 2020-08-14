@@ -1,36 +1,27 @@
 
-
 * {
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Source Sans Pro', sans-serif;
-  --color-darkgray: #363636;
-  --color-royalblue: #159;
-  --color-slategreen: #9df5c8;
-  --font-header: source code pro;
+  margin:0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-body, html{
-  height: 100%;
-}
-
 body{
   display: flex;
   flex-direction: column;
 }
-
+main{
+  margin: 10px 0px;
+  padding: 0;
+}
+section{
+  margin: 10px;
+  padding: 5px;
+}
 article{
-  margin: 10px 15px;
-  padding: 10px;
+  margin: 5px 15px;
+  padding: 5px 10px;
   }
 h1 {
   text-align: center;
-  font-size: 32px;
-}
-h2 {
-  font-size: 24px;
-}
-h3{
-  font-size: 22px;
 }
   
 p{
@@ -54,7 +45,7 @@ p{
   flex-direction: row;
   justify-content: space-between;
   background: #363636;
-  padding: 0px 30px 0px 30px;
+  padding: 0px 25px 0px 25px;
 }
 .header-text-box{
   width: 250px;
@@ -65,22 +56,6 @@ p{
   color: whitesmoke;
   font-family: var(--font-header, sans-serif); 
 }
-.header-btn-flexbox{
-  display: flex;
-  flex-direction: row; 
-  justify-content: space-between;
-}
-
-.header-button{
-  background: none;
-  border: none;
-  font-size: larger;
-  max-width: 150px;
-  min-width: 80px;
-  height: 40px;
-  color: whitesmoke;
-}
-
 .header-icon-flexbox{
   display: flex;
   flex-direction: row; 
@@ -97,9 +72,18 @@ p{
 }
 .nav-bar{
   display: flex;
+  flex-direction: row;
+  flex: 1 0 auto;
   justify-content: space-evenly;
-  flex-flow: row wrap;
-  padding: 5px auto 10px auto;
+}
+.header-button{
+  background: none;
+  border: none;
+  font-size: larger;
+  max-width: 150px;
+  height: 40px;
+  color: whitesmoke;
+  margin: auto 10px;
 }
 .body-main-container{
   display: flex;
@@ -118,15 +102,13 @@ p{
   width: 40%;
 }
 .body-section-2{
-  width: 60%;
-  margin: 10px;
+  width: 70%;
 }
 .profile-img-box{
   margin: 5px;
 }
 .profile-img{
   width: 100%;
-  border: solid whitesmoke 2px;
   border-radius: 5%;
 }
 .body-content-title{
@@ -256,6 +238,6 @@ p{
       width: 65%;
     }
     .body-section-2{
-      max-height: 100%;
+      width: 90%;
     }
 }
