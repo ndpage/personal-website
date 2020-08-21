@@ -95,21 +95,18 @@ p{
   padding: 10px 5px;
 }
 .body-section-1{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: 10px;
-  width: 40%;
+  
 }
 .body-section-2{
-  width: 70%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .profile-img-box{
-  margin: 5px;
+  max-width: 100%;
 }
 .profile-img{
-  width: 100%;
+  max-width: 100%;
   border-radius: 5%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .body-content-title{
   margin: 10px auto 5px auto;
@@ -125,16 +122,22 @@ p{
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  background: linear-gradient(to bottom,white,lightgray, darkgray);
+  /* background: linear-gradient(to bottom,white,lightgray, darkgray); */
+  background: #363636;
   align-items: center;
+  color: white;
 }
+.footer-main a{
+  color: white;
+}
+
 .footer-text{
   font-size: 12px;
   margin: 5px auto;
 }
 .projects-container{
   flex: 1 0 auto;
-  background: linear-gradient(to bottom,white, whitesmoke,lightblue,var(--color-slategreen, lightgreen) );
+  background: white;
 }
 .page-title{
   margin: 20px auto;
