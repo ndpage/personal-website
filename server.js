@@ -3,13 +3,15 @@
 
 var express= require('express'); 
 var bodyParser = require('body-parser');
-var bodyParser = require('body-parser');
+var path = require('path');
 var multer = require('multer');
 var upload = multer();
 var app = express();
+
 var port = 3000;
 var hostname = '127.0.0.1';
 
+let formData = {};
 
 // Configuation for the server app
 
@@ -41,10 +43,23 @@ app.get('/admin',
     }
 );
 
-app.post('/contact-form', function(req, res) {
-    res.send('Hello World!');
-    }
-);
+
+
+app.post('/contact/submit', function (req, res) {
+   /*
+    dbConn.then(function(db) {
+        delete req.body._id; // for safety reasons
+        db.collection('feedbacks').insertOne(req.body);
+    });
+    */  
+    res.send('Data received:' + JSON.stringify(req.body));
+});
+
+app.get('/view-feedbacks',  function(req, res) {
+   
+            res.status(200).json(feedbacks);
+        
+});
 
 //Capture All 404 errors
 app.use(function (req,res,next){
