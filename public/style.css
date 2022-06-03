@@ -205,6 +205,11 @@ p{
   width: 125%;
   height: 30px;
 }
+
+.error{
+  margin: 100px auto;
+  color: #FF11CC;
+}
 @media only screen and (max-width: 360px) {
   .contact-form{
     padding: 15px 10px;

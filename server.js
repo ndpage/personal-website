@@ -43,8 +43,6 @@ app.get('/admin',
     }
 );
 
-
-
 app.post('/contact/submit', function (req, res) {
    /*
     dbConn.then(function(db) {
@@ -58,15 +56,12 @@ app.post('/contact/submit', function (req, res) {
 app.get('/view-feedbacks',  function(req, res) {
    
             res.status(200).json(feedbacks);
-        
 });
 
 //Capture All 404 errors
 app.use(function (req,res,next){
-	res.status(404).send('404 Error: Unable to find the requested resource!');
+    res.status(404).sendFile(__dirname+'/public/index.html');
 });
-
-//app.get('/hello-world', function(req, res) => res.send('Hello World!'));
 
 // Start the server
 app.listen(port, hostname); //127.0.0.1
